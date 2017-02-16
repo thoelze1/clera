@@ -4,4 +4,4 @@ CLERA animates an hourglass to your screen when you enter "clera" instead of "cl
 
 Click on the image below to see CLERA!
 
-[![](clera.jpg)](https://www.youtube.com/watch?v=w3IoVGmHfGE)
+[![](clera.gif)](https://www.youtube.com/watch?v=w3IoVGmHfGE)
