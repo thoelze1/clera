@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <ncurses.h>
 #include <unistd.h>
 #include "clera.h"
@@ -15,15 +16,18 @@ int main(int argc, char *argv[])
 {
 	int c = 0;
 	char *str[2][9]
-		= {	{FILL1,  FILL2,  FILL3,  FILL4,  FILL5,  FILL6,  FILL7,  FILL8,  FILL9 },
-			{EMPTY1, EMPTY2, EMPTY3, EMPTY4, EMPTY5, EMPTY6, EMPTY7, EMPTY8, EMPTY9} };
+		= {	{LINE10, FILL1,  FILL2,  FILL3,  FILL4,  FILL5,  FILL6,  FILL7,  LINE10},
+			{LINE10, EMPTY1, EMPTY2, EMPTY3, EMPTY4, EMPTY5, EMPTY6, EMPTY7, LINE10} };
 	
 	/**	= {	{FILL9,  FILL8,  FILL7,  FILL6,  FILL5,  FILL4,  FILL3,  FILL2,  FILL1 },
 			{EMPTY9, EMPTY8, EMPTY7, EMPTY6, EMPTY5, EMPTY4, EMPTY3, EMPTY2, EMPTY1} }; */
-	
+
+	printf("%s\n", T30STR1);
+	sleep(2);
+		
 	/* Init ncurses mode */
 	initscr ();
-
+	
 	/* Hide cursor */
 	curs_set (0);
 	while (c < 1000) {
