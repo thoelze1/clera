@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -lncurses
 
 all: clera.c clera.h
-	$(CC) $(CFLAGS) clera.c -o clera
+	$(CC) clera.c -o clera $(CFLAGS)
 
 clean:
 	rm -f clera
